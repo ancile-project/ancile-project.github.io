@@ -43,6 +43,10 @@
                 padding-top: 100px;
                 font-size: 4rem;
             }
+            .image {
+                width:100%;
+                height:auto;
+            }
 
         </style>
     </head>
@@ -59,13 +63,37 @@
             </div>
 
             <div class="ui raised very padded text container segment">
-              <h2 class="ui header">The Cornell Tech Campus API</h2>
               <p>Ancile is a framework that is designed to support the creation of microscale, privacy-concious, data-driven planning
                 applications on the Cornell Tech Campus. Ancile will dramatically lower the bar for building advanced planning applications while giving individuals fine-grained visibility and control over how their personal data is used and shared.
               </p>
               <h2 class="ui header">Privacy Preservation and Management</h2>
               <p>Ancile provides high level controls to users so that they can manage how their data is being used to help develop the campus.
               </p>
+              <h2>Small Data Core API</h2>
+
+                <p>One of the key aspects of Ancile is utilizing personal user data in a privacy-preserving way.  The <a href="https://core.smalldata.io">Small Data Core API</a>  is Ancile’s arbiter for personal user data, providing stronger protections on access to a user's personal data.</p>
+
+                <p>Small Data Core provides additional scoping to existing data APIs, which allows users have a greater idea of what personal data is being used, and for apps to have a greater ability to request only the data that they absolutely require.</p>
+                <p>A simple example of this is an application that only needs access to events on your calendar that take place between certain times or that occur in a specific place.  Currently, you’d need to provide access to your entire Google calendar to the app, however Small Data Core can enforce this additional filtering and communicate that to the user.</p>
+
+                <p> The following shows the general architecture of Small Data Core.</p>
+
+                <image class="image" src="/images/SmallDataCoreArchitecture.png" />
+
+                <p>An app that uses Small Data Core will go through the following process to retrieve a user’s data:</p>
+
+                <ul>
+                    <li>The app registers with Small Data Core</li>
+                    <li>The app tells Core what data it would like to request from users</li>
+                    <li>The app redirects a user to authenticate with Core</li>
+                    <li>The user is given details on what data is being requested</li>
+                    <li>Upon approval, the data is accessible by the app</li>
+                    <li>The user can revoke permission at any time</li>
+                </ul>
+
+
+
+              
             </div>
         </div>
     </body>
