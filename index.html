@@ -1,100 +1,107 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
+<head>
+    <title>Ancile Privacy Project</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="css/semantic.min.css">
-        <style>
-            * {
-                position:relative;
-                border-style: solid;
-                box-sizing: border-box;
-                border-color: rgba(255,255,255,0);
-                border-width: 0;
-            }
-            .container {
-                width: 900px;
-            }
-            .header {
-                display: flex;
-                flex: column nowrap;
-            }
-            .logo {
-                position: relative;
-                display: block;
-                left: 0;
-                top: 0;
-                width: auto;
-                height: 300px;
-                float: left;
-            }
-            .page-header {
-                height: 350px;
-            }
-            .top-header {
-                padding-top: 100px;
-                font-size: 4rem;
-            }
-            .image {
-                width:100%;
-                height:auto;
-            }
+</head>
+<body>
 
-        </style>
-    </head>
-    <body>
-        <div class="ui text container">
-            <div class="ui vertical center aligned">
-                <div class="ui text container page-header">
-                  <img class="logo" src="https://pbs.twimg.com/profile_images/773916799431766017/r260ZCI0.jpg" />
-                  <h1 class="top-header">
-                    Ancile
-                  </h1>
-                  <h2>Campus Infrastucture<br />for Data-Driven Planning</h2>
-                </div>
+<div class="container">
+
+    <div class="row">
+        <div class="row center-align">
+            <div class="col push-s1 push-m2 push-l2">
+                <img src="images/ancile-logo.png" style="height: 120px;margin-top: 30px;"/>
             </div>
 
-            <div class="ui raised very padded text container segment">
-              <p>Ancile is a framework that is designed to support the creation of microscale, privacy-concious, data-driven planning
-                applications on the Cornell Tech Campus. Ancile will dramatically lower the bar for building advanced planning applications while giving individuals fine-grained visibility and control over how their personal data is used and shared.
-              </p>
-              <h2 class="ui header">Privacy Preservation and Management</h2>
-              <p>Ancile provides high level controls to users so that they can manage how their data is being used to help develop the campus.
-              </p>
-              <h2>Small Data Core API</h2>
+            <div class="col push-s1 push-m2 push-l2 s10 m6 l6">
+                <div class="row center-align">
+                    <h3>Ancile Privacy Project</h3>
+                </div>
 
-                <p>One of the key aspects of Ancile is utilizing personal user data in a privacy-preserving way.  The <a href="https://core.smalldata.io">Small Data Core API</a>  is Ancile’s arbiter for personal user data, providing stronger protections on access to a user's personal data.</p>
+                <div class="divider"></div>
+                <div class="row center-align">
+                    <div class="col s6 m3" style="padding-bottom: 20px;">
+                        <a href="https://github.com/ancile-project" class="lighten-1 waves-effect waves-teal btn-flat">GitHub</a>
+                    </div>
+                    <div class="col s6 m3" style="padding-bottom: 20px;">
+                        <a href="https://dev.ancile.smalldata.io/" class="lighten-1 waves-effect waves-teal btn-flat">Demo</a>
+                    </div>
+                    <div class="col s6 m3" style="padding-bottom: 20px;">
+                        <a href="https://ebagdasa.github.io/assets/files/ancile.pdf" class="lighten-1 waves-effect waves-teal btn-flat">
+                            Paper
+                        </a>
+                    </div>
+                    <div class="col s6 m3" style="padding-bottom: 20px;">
+                        <a href="mailto:eugene@cs.cornell.edu" class="lighten-1 waves-effect waves-teal btn-flat">
+                            Contact
+                        </a>
+                    </div>
+                </div>
 
-                <p>Small Data Core provides additional scoping to existing data APIs, which allows users have a greater idea of what personal data is being used, and for apps to have a greater ability to request only the data that they absolutely require.</p>
-                <p>A simple example of this is an application that only needs access to events on your calendar that take place between certain times or that occur in a specific place.  Currently, you’d need to provide access to your entire Google calendar to the app, however Small Data Core can enforce this additional filtering and communicate that to the user.</p>
-
-                <p> The following shows the general architecture of Small Data Core.</p>
-
-                <image class="image" src="/images/SmallDataCoreArchitecture.png" />
-
-                <p>An app that uses Small Data Core will go through the following process to retrieve a user’s data:</p>
-
-                <ul>
-                    <li>The app registers with Small Data Core</li>
-                    <li>The app tells Core what data it would like to request from users</li>
-                    <li>The app redirects a user to authenticate with Core</li>
-                    <li>The user is given details on what data is being requested</li>
-                    <li>Upon approval, the data is accessible by the app</li>
-                    <li>The user can revoke permission at any time</li>
-                </ul>
-
-
-
-              
+<!--                <div class="divider"></div>-->
             </div>
         </div>
-    </body>
-</html>
+        <div class="col push-m2 push-l2 s12 m8 l8">
+            <p class="text-align: justify; text-justify: inter-word;">Ancile is a framework designed to support the creation of
+                microscale, privacy-concious, data-driven planning
+                applications. Ancile lowers
+                the bar for building advanced planning applications while giving
+                individuals fine-grained visibility and control over how their
+                personal data is used and shared.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col push-m2 push-l2 s12 m8 l8">
+            <img class="img-responsive" src="images/system.png" alt="system architecture"/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col push-m2 push-l2 s12 m8 l8">
+            <p style="text-align: justify; text-justify: inter-word;">
+                Ancile provides an interface
+                for principals to authorize data import from a data provider
+                and to specify policies to be associated with all data about a an individual
+                received by an application from that data provider.</p>
+            <p style="text-align: justify; text-justify: inter-word;">
+                These
+                policies are specified as regular expressions over an "alphabet" of
+                commands that operate on data. Both
+                data subjects and policy administrators (e.g., regulatory experts or
+                faculty PIs) may specify policies. On data ingress into Ancile, each
+                data value is associated with a policy formed by intersecting the
+                policies provided by each stakeholder.</p>
+            <p style="text-align: justify; text-justify: inter-word;">
+                Ancile implements a reactive
+                mechanism that updates the associated policy when a data value
+                is used and that synthesizes policies for any derived data values.
+                To support extensible development of location-based services by
+                third parties, Ancile offers a Python library of commands that application
+                developers can use to write programs for handling location data or any other type
+                of sensitive data. It as well supports wrapping any third-party library to be enforced by policies.
+                Ancile executes these programs on behalf of the applications and
+                enforces that the data are only processed in compliance with their
+                associated policies.
+            </p>
+
+            <p>
+                For more information check our  <a href="!">paper</a> and <a href="!">GitHub repo</a>.
+            </p>
+
+            <p>Project PI: <a href="https://www.cs.cornell.edu/~jnfoster/">Nate Foster</a>.
+            Supported by NSF Grant <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1642120&HistoricalAwards=false">1642120</a>.</p>
+        </div>
+    </div>
+
+    <div class="footer-copyright right-align">Cornell University, 2019</div>
+</div>
